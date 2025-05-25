@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #4a7bca, #2e5eaa, #1e3c6e);
+    color: #000;
+}
+
+header {
+    background-color:#ffdd00;
+    padding: 12px 0;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    margin-top: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.pixel-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px 0;
+    margin-bottom: 70px;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.content-box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 800px;
+    border: 3px solid black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.activities-list {
+    line-height: 2.5;
+    font-size: 14px;
+}
+
+.gallery-container {
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.gallery-btn {
+    background-color: #ffdd00;
+    border: 3px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    text-decoration: none;
+    right: 290px;
+    margin: 20px ;
+}
+  
+.gallery-btn:hover {
+    background: whitesmoke;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+/* Footer Styles */
+.copyright {
+  text-align: center;
+  padding: 20px 0 15px 0;
+  border-top: 2px dashed #000;
+  background-color: #fff;
+}
+
+.copyright .footer-text {
+  font-size: 10px;
+  color: #000;
+  font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    header {
+        margin-top: 20px;
+        padding: 10px 0;
+        position: relative;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffdd00;
+        z-index: 100;
+        border-bottom: 3px solid #000;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav li {
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid #000;
+    }
+    
+    /* Main Content */
+    main {
+        padding: 20px;
+    }
+    
+    .pixel-title {
+        font-size: 24px;
+        margin: 30px 0;
+    }
+    
+    /* Content Box */
+    .content-box {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .activities-list {
+        font-size: 10px;
+        line-height: 2;
+        padding-left: 15px;
+    }
+    
+    /* Gallery Button */
+    .gallery-btn {
+        position: relative;
+        right: auto;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    /* Gallery Section */
+    .gallery-container {
+        margin: 40px auto;
+        padding: 10px;
+    }
+    
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .gallery-grid img {
+        width: 100%;
+        border: 2px solid #000;
+    }
+}

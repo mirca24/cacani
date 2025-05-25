@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #4a7bca, #2e5eaa, #1e3c6e);
+    color: #000;
+}
+
+header {
+    background-color:#ffdd00;
+    padding: 12px 0;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    margin-top: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.pixel-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 40px;
+    text-align: center;
+    margin: 80px 0;
+    margin-bottom: 70px;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-box, .social-box, .form-box {
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 5px 5px 0 #000;
+}
+
+.info-title, .form-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #000;
+    position: relative;
+    padding-bottom: 15px;
+    text-decoration: dashed underline;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px dotted #ccc;
+}
+
+
+.contact-list-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+} 
+
+.contact-label {
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.contact-value {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-btn {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    border: 3px solid #000;
+    border-radius: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #000;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 0 #000;
+}
+
+.instagram-btn {
+    background-color: #ff59c1;
+}
+
+.linkedin-btn {
+    background-color: #59c1ff;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 550px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    color: #000;
+}
+
+.form-group input, .form-group textarea {
+    padding: 12px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #ffdd00;
+    box-shadow: 0 0 0 2px rgba(255, 221, 0, 0.3);
+}
+
+.submit-btn {
+    background-color: #ffdd00;
+    border: 3px solid #000;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 0 #000;
+}
+
+/* Footer Styles */
+.copyright {
+  text-align: center;
+  padding: 20px 0 15px 0;
+  border-top: 2px dashed #000;
+  background-color: #fff;
+}
+
+.copyright .footer-text {
+  font-size: 10px;
+  color: #000;
+  font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    header {
+        margin-top: 20px;
+        padding: 10px 0;
+        position: relative;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffdd00;
+        z-index: 100;
+        border-bottom: 3px solid #000;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav li {
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid #000;
+    }
+    
+    /* Main Content */
+    .contact-container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    .pixel-title {
+        font-size: 24px;
+        margin: 40px 0;
+    }
+    
+    /* Contact Content Layout */
+    .contact-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-info, .contact-form-container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Info Boxes */
+    .info-box, .social-box, .form-box {
+        padding: 20px;
+    }
+    
+    .info-title, .form-title {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    /* Contact List */
+    .contact-list-item {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .contact-label {
+        font-size: 8px;
+    }
+    
+    .contact-value {
+        font-size: 12px;
+    }
+    
+    /* Form Elements */
+    .form-group input, 
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    /* Social Buttons */
+    .social-btn {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+}
+
